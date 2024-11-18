@@ -1,0 +1,50 @@
+body{
+    background-image: url(https://media.istockphoto.com/id/1502846052/photo/textured-soccer-game-field-with-neon-fog-center-midfield.jpg?s=612x612&w=0&k=20&c=LPSo6ps1NfZ_xviL0tmhnnrcLjjFXAQhsYr3qAOfviY=);
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: green;
+}
+
+
+.goal {
+    position: absolute;
+    top: 50%;
+    left: 1000px;
+    width: 500px;
+    height: auto;
+}
+.goalkeeper{
+    position: absolute;
+    left: 1100px;
+    top: 520px;
+    width: 200px;
+    height: 200px;
+    transition: all 0,5s;
+}
+.goalkeeper:hover{
+   transform: rotate(10deg);
+}
+
+.ball {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    animation: move 3s infinite ease-in-out;
+}
+
+@keyframes move {
+    0% {
+        left: 10px;
+        bottom: 10px;
+    }
+    50% {
+        left: 70%;
+        bottom: 80px;
+    }
+    100% {
+        left: 90%;
+        bottom: 10px;
+    }
+}
